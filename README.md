@@ -1,5 +1,3 @@
-# LoginLayout
-
 Drop in layout element that implements common UI login patterns.  Features include:
 
 1. Login with email and password
@@ -19,6 +17,7 @@ Drop in layout element that implements common UI login patterns.  Features inclu
 
 Add the layout element to any activity layout file:
 
+```xml
     <com.vml.login.LoginLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,10 +26,11 @@ Add the layout element to any activity layout file:
         app:showPasswordLogin="true"
         app:showGoogleLogin="false"
         app:showSmartLock="true"/>
-    
+```    
     
 In your activity's onCreate method, find your LoginLayout and set a FormListener:
 
+```java
     LoginLayout loginLayout = (LoginLayout) findViewById(R.id.login_view);
 
     loginLayout.setFormListener(new FormListener() {
@@ -68,9 +68,11 @@ In your activity's onCreate method, find your LoginLayout and set a FormListener
             finish();
         }
     });
+```
 
 Then add the following hooks to your activity's lifecycle methods:
 
+```java
     @Override
     protected void onDestroy() {
         loginLayout.onDestroy();
@@ -82,11 +84,14 @@ Then add the following hooks to your activity's lifecycle methods:
         loginLayout.handleActivityResult(requestCode, resultCode, data);
         super.onActivityResult(requestCode, resultCode, data);
     }
+```
 
 
 See full examples [here](app/src/main/java/com/sample/login).
 
 ## Intstallation
+
+Jitpack integration coming soon.  Until then...
 
 Grab the latest aar file [here](app/libs) and put it in your app/libs folder.
 
@@ -102,7 +107,7 @@ repositories {
 
 dependencies {
     ...
-    compile ':login-1.0-1-release@aar'
+    compile ':login-X.X-X-release@aar'
     compile 'com.android.support:appcompat-v7:25.0.1'
     compile 'com.android.support:design:25.0.1'
     compile 'com.google.android.gms:play-services-auth:10.0.0'
