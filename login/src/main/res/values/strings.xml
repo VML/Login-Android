@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="or">or</string>
+    <string name="forgot_password_prompt">Forgot password?</string>
+    <string name="create_account">Create an account</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="create_password">Create a password</string>
+    <string name="register">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="forgot_password_title">Forgot password</string>
+    <string name="reset_message">Enter your email address and we\'ll send you a link to recover your password.</string>
+    <string name="create_account_message">Enter an email address and password to create a new account.</string>
+    <string name="continue_label">Continue</string>
+    <string name="currently_unavailable">Currently unavailable</string>
+</resources>

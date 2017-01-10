@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoginLayout">
+        <attr name="showGoogleLogin" format="boolean" />
+        <attr name="showFacebookLogin" format="boolean" />
+        <attr name="showEmailLogin" format="boolean" />
+        <attr name="showPasswordLogin" format="boolean" />
+        <attr name="showSmartLock" format="boolean" />
+    </declare-styleable>
+</resources>

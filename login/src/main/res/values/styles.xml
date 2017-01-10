@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@android:color/holo_blue_dark</item>
+        <item name="android:textColorHint">#33FFFFFF</item>
+        <item name="android:colorControlNormal">@android:color/white</item>
+        <item name="android:colorControlActivated">@android:color/white</item>
+        <item name="android:colorControlHighlight">@android:color/white</item>
+    </style>
+
+    <style name="lv_text" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="lv_button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#88FFFFFF</item>
+        <item name="android:textAppearance">@style/lv_text</item>
+        <item name="android:padding">18dp</item>
+    </style>
+
+    <style name="lv_login_button" parent="lv_button"></style>
+    <style name="lv_continue_button" parent="lv_button"></style>
+
+    <style name="lv_facebook_button" parent="lv_button">
+        <item name="android:drawableStart">@drawable/facebook_vector</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="lv_google_button" parent="lv_button">
+        <item name="android:drawableStart">@drawable/google_vector</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="lv_borderless_button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textAppearance">@style/lv_text</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="lv_edittext" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="lv_dialog_theme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+
+</resources>
