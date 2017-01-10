@@ -11,8 +11,9 @@ Drop in layout element that implements common UI login patterns.  Features inclu
 7. Login with email only (no password)
 
 
-<img src="art/full.png" width="300" height="560"/>
-
+<img src="art/basic.png" width="300" height="560" />&nbsp;
+<img src="art/full.png" width="300" height="560"/>&nbsp;
+<img src="art/passwordless.png" width="300" height="560"/>
 
 ## Usage
 
