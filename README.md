@@ -86,6 +86,30 @@ Then add the following hooks to your activity's lifecycle methods:
 
 See full examples [here](app/src/main/java/com/sample/login).
 
+## Intstallation
+
+Grab the latest aar file [here](app/libs) and put it in your app/libs folder.
+
+Add the following to your app build.gradle:
+
+```groovy
+repositories {
+    ...
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    ...
+    compile ':login-1.0-1-release@aar'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.google.android.gms:play-services-auth:10.0.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+}
+    
+```
 
 
 License
