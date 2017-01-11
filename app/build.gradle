@@ -55,12 +55,8 @@ dependencies {
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
 
+    //compile 'com.github.VML:Login-Android:-SNAPSHOT'
     compile project(":login")
-//    compile ':login-1.0-release@aar'
-//    compile 'com.android.support:appcompat-v7:25.0.1'
-//    compile 'com.android.support:design:25.0.1'
-//    compile 'com.google.android.gms:play-services-auth:10.0.0'
-//    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
 
     testCompile 'junit:junit:4.12'
 }

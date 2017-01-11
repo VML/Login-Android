@@ -1,4 +1,4 @@
-Drop in layout element that implements common UI login patterns.  Features include:
+Drop in layout element that implements common UI login patterns.  Includes:
 
 1. Login with email and password
 2. Create account from email and password
@@ -89,30 +89,26 @@ Then add the following hooks to your activity's lifecycle methods:
 
 See full examples [here](app/src/main/java/com/sample/login).
 
-## Intstallation
-
-Jitpack integration coming soon.  Until then...
-
-Grab the latest aar file [here](app/libs) and put it in your app/libs folder.
-
-Add the following to your app build.gradle:
-
+## Install
+Add jitpack to your root build.gradle:
 ```groovy
-repositories {
-    ...
-    flatDir {
-        dirs 'libs'
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
     }
 }
+```
+[![](https://jitpack.io/v/VML/Login-Android.svg)](https://jitpack.io/#VML/Login-Android)
 
+Add dependency to your module build.gradle:
+```groovy
 dependencies {
-    ...
-    compile ':login-X.X-X-release@aar'
-    compile 'com.android.support:appcompat-v7:25.0.1'
-    compile 'com.android.support:design:25.0.1'
-    compile 'com.google.android.gms:play-services-auth:10.0.0'
-    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.github.VML:Login-Android:X.X.X'
 }
+```    
+
+
     
 ```
 
