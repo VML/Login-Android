@@ -13,6 +13,8 @@ public interface LoginView {
 
     void hideFacebookLogin();
 
+    void showFacebookLogin();
+
     void hideGoogleLogin();
 
     void hideEmailForm();

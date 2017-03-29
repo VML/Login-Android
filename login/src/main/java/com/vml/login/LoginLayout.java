@@ -136,6 +136,11 @@ public class LoginLayout extends LinearLayout implements LoginView, View.OnClick
     }
 
     @Override
+    public void showFacebookLogin() {
+        facebookButton.setVisibility(VISIBLE);
+    }
+
+    @Override
     public void hideGoogleLogin() {
         googleButton.setVisibility(GONE);
     }
@@ -334,6 +339,7 @@ public class LoginLayout extends LinearLayout implements LoginView, View.OnClick
     public void onDestroy() {
         if (presenter != null) presenter.detatchView();
         if (smartLockView != null) smartLockView.disconnect();
+        if (progressDialog != null) progressDialog.dismiss();
         smartLockView = null;
         inputDialog = null;
         progressDialog = null;

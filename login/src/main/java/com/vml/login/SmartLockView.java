@@ -191,7 +191,7 @@ public class SmartLockView {
 
                         @Override
                         public void onConnectionSuspended(int i) {
-
+                            int j = 0;
                         }
                     })
                     .addOnConnectionFailedListener(new GoogleApiClient.OnConnectionFailedListener() {
@@ -211,6 +211,8 @@ public class SmartLockView {
                     .addApi(Auth.CREDENTIALS_API)
                     .build();
             googleApiClient.connect();
+        } else {
+            apiClientListener.onConnectError(new Exception("connect failed"));
         }
     }
 
