@@ -1,18 +1,12 @@
-import java.text.SimpleDateFormat
-
 apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '25.0.2'
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 24
-        versionCode gitCommitCount()
-        versionName gitSha()
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
     buildTypes {
         release {
@@ -37,7 +31,7 @@ dependencies {
     })
 
     compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:design:25.1.0'
     compile 'com.google.android.gms:play-services-auth:10.0.0'
     compile 'com.facebook.android:facebook-android-sdk:4.6.0'
 
@@ -45,19 +39,6 @@ dependencies {
     testCompile "org.mockito:mockito-core:1.+"
 }
 
-def buildTime() {
-    def df = new SimpleDateFormat("yyyyMMddHHmm")
-    return df.format(new Date())
-}
-
-def gitCommitCount() {
-    return "git rev-list HEAD --first-parent --count".execute().text.trim().toInteger()
-}
-
-def gitSha() {
-    return "git rev-parse --short HEAD".execute().text.trim()
-}
-
-def gitBranch() {
-    return "git rev-parse --abbrev-ref HEAD".execute().text.trim()
+afterEvaluate {
+    bundleRelease.finalizedBy test
 }
