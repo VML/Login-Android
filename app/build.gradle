@@ -59,5 +59,10 @@ dependencies {
     }
 
     testCompile 'junit:junit:4.12'
+
+
+    compile 'com.buddybuild:sdk:0.0.59@aar'
+    compile 'com.squareup:seismic:1.0.2'
+    compile 'ch.acra:acra:4.6.2'
 }
 
