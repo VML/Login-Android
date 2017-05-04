@@ -39,6 +39,6 @@ dependencies {
     testCompile "org.mockito:mockito-core:1.+"
 }
 
-afterEvaluate {
-    bundleRelease.finalizedBy test
-}
+//afterEvaluate {
+//    bundleRelease.finalizedBy test
+//}
